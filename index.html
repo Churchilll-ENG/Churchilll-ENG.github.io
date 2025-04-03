@@ -1,45 +1,122 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人网站</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 1rem;
+            background-color: #eaeaea;
+            border-top: 1px solid #ccc;
+        }
+        .links a {
+            text-decoration: none;
+            color: #333;
+            padding: 0.5rem 1rem;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .links a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: static;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <div id="login-container">
-        <h2>登录</h2>
-        <input type="text" id="username" placeholder="账号">
-        <input type="password" id="password" placeholder="密码">
-        <button onclick="login()">登录</button>
-        <p id="error-msg"></p>
-        <a href="#" onclick="forgotPassword()">忘记密码？</a>
+    <header>
+        <h1>Welcome to My Web</h1>
+    </header>
+    <main>
+        <p>This is a Simple webpage!</p>
+        <h2>Personal Profile</h2>
+        <br>
+        <br>
+        <h2>Educational Background</h2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>Here are some useful links:</p>
+    </main>
+    <div class="links">
+        <a href="https://chatgpt.com/" target="_blank">GPT</a>
+        <a href="https://chat.deepseek.com/" target="_blank">Deepseek</a>
+        <a href="https://kimi.moonshot.cn/" target="_blank">Kimi</a>
+        <a href="https://www.njupt.edu.cn/_t44/main.htm" target="_blank">NJUPT</a>
+        <a href="https://www.autodl.com/console/instance/list?_random_=1743683980556" target="_blank">AutoDL</a>
+        <a href="https://www.youtube.com/?gl=JP&hl=ja" target="_blank">YouTube</a>
+        <a href="https://www.bilibili.com/" target="_blank">BiliBili</a>
     </div>
-
-    <div id="content" style="display:none;">
-        <h1>欢迎来到个人主页</h1>
-        <h2>个人信息</h2>
-        <p id="user-info">用户名: sby114514</p>
-        <button onclick="editInfo()">修改信息</button>
-        
-        <h2>笔记</h2>
-        <textarea id="note" placeholder="输入你的笔记..."></textarea>
-        <button onclick="saveNote()">保存笔记</button>
-        <ul id="note-list"></ul>
-
-        <h2>常用网站</h2>
-        <ul>
-            <li><a href="https://chatgpt.com/" target="_blank">GPT助手</a></li>
-            <li><a href="https://chat.deepseek.com/" target="_blank">Deepseek助手</a></li>
-            <li><a href="https://kimi.moonshot.cn/" target="_blank">Kimi助手</a></li>
-            <li><a href="https://www.njupt.edu.cn/_t44/main.htm" target="_blank">NJUPT官网</a></li>
-            <li><a href="https://www.autodl.com/console/instance/list?_random_=1743683980556" target="_blank">算力云平台</a></li>
-            <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
-            <li><a href="https://www.bilibili.com/" target="_blank">Bilibili</a></li>
-        </ul>
-    </div>
-
-    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2025 My GitHub Web. All rights reserved.</p>
+    </footer>
 </body>
 </html>
-
