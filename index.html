@@ -1,1 +1,45 @@
-<p>Hello</p>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网站</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-container">
+        <h2>登录</h2>
+        <input type="text" id="username" placeholder="账号">
+        <input type="password" id="password" placeholder="密码">
+        <button onclick="login()">登录</button>
+        <p id="error-msg"></p>
+        <a href="#" onclick="forgotPassword()">忘记密码？</a>
+    </div>
+
+    <div id="content" style="display:none;">
+        <h1>欢迎来到个人主页</h1>
+        <h2>个人信息</h2>
+        <p id="user-info">用户名: sby114514</p>
+        <button onclick="editInfo()">修改信息</button>
+        
+        <h2>笔记</h2>
+        <textarea id="note" placeholder="输入你的笔记..."></textarea>
+        <button onclick="saveNote()">保存笔记</button>
+        <ul id="note-list"></ul>
+
+        <h2>常用网站</h2>
+        <ul>
+            <li><a href="https://chatgpt.com/" target="_blank">GPT助手</a></li>
+            <li><a href="https://chat.deepseek.com/" target="_blank">Deepseek助手</a></li>
+            <li><a href="https://kimi.moonshot.cn/" target="_blank">Kimi助手</a></li>
+            <li><a href="https://www.njupt.edu.cn/_t44/main.htm" target="_blank">NJUPT官网</a></li>
+            <li><a href="https://www.autodl.com/console/instance/list?_random_=1743683980556" target="_blank">算力云平台</a></li>
+            <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+            <li><a href="https://www.bilibili.com/" target="_blank">Bilibili</a></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
